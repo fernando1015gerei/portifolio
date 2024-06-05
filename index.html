@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fernando Andrei</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {                               
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #000000;
+        }  
+
+        html, body {
+            height: 100%;
+            overflow-x: hidden;
+        }
+
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }  
+        #bg-video {            
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+            background: no-repeat;
+            background-size: auto;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }  
+        header nav a {
+            color: rgb(255, 253, 253);
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s ease, color 0.3s ease;
+        } 
+        header nav a:hover {
+            transform: scale(1.1);
+            color: #3b9aff;
+        } 
+        .container {
+            margin-top: 70px;
+            max-width: 1000px;
+            padding: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            background: rgba(253, 253, 253, 0.85);
+            box-shadow: 0 8px 16px rgba(240, 8, 8, 0.2);
+            border: 1px solid #0800ff;
+            border-radius: 10px;
+            transition: transform 0.6s ease, box-shadow 0.3s ease;
+        }
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgb(1, 86, 255);
+        }
+        .profile-img-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(250, 247, 247, 0.96);
+            transition: transform 0.5s ease, box-shadow 0.5s ease, opacity 0.5s ease;
+        }
+        .profile-img:hover {
+            transform: rotate(10deg) scale(1.1);
+            box-shadow: 0 0 20px rgba(245, 7, 7, 0.3);
+            opacity: 0.8;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .section-title {
+            background-color: #0b0290d0;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            border-radius: 4px;
+            font-family: 'Georgia', serif;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            background: #2e02bd2e;
+            margin: 10px 0;
+            padding: 15px;
+            border-left: 5px solid #5806fb;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        ul li:hover {
+            background: #05ece457;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+        header nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        header nav a {
+                margin: 10px 0;
+            }
+        }
+        #btn-topo:hover {
+            background-color: rgba(225, 5, 5, 0);
+        }
+        #btn-topo i {
+            transform: rotate(-90deg);
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #00000000;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #1da9e6;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+          <source src="Nova pasta (2)/fundo21.mp4" type="video/mp4">
+        </video>
+    </div>
+<header>
+    <nav>
+          <a href="#sobre-mim">SOBRE MIM</a>
+          <a href="#habilidades">HABIIDADES</a>
+          <a href="#experiencia">EXPERIÊNCIA</a>
+          <a href="#educacao">EDUCAÇÃO</a>
+     </nav>
+</header>
+    <div class="container">
+      <div class="profile-img-container">
+          <img src="Nova pasta (2)/abc.jpg" alt="abc.jpg" class="profile-img">
+      </div>
+     <section id="sobre-mim" class="section">
+          <h2 class="section-title">Sobre Mim</h2>
+          <p>Olá, me chamo Fernando, tenho 30 anos e no momento atuo como segurança. Tambem sou estudante de analise e Desenvolvimento de software entre outros cursos extra curriculares que faço.
+            Estou buscando minha primeira vaga na area de TI e estou a disposição para responder qualquer duvida. Grato! </p>
+    </section>
+    <section id="habilidades" class="section">
+          <h2 class="section-title">Habilidades</h2>
+    <ul>
+          <li>Boa concentração</li>
+          <li>Foco</li>
+          <li>Disciplina</li>
+          <li>Trabalho bem sobre pressão</li>
+          <li></li>
+          <li></li>
+    </ul>
+    </section>
+    <section id="experiencia" class="section">
+          <h2 class="section-title">Experiência Profissional</h2>
+    <ul>
+    <li>
+          <h3>Empresa 1</h3>
+          <p></p>
+    </li>
+    <li>
+          <h3>Empresa 2</h3>
+          <p></p>
+    </li>
+    </ul>
+    </section>
+    <section id="educacao" class="section">
+          <h2 class="section-title">Ensino Superior</h2>
+    <ul>
+          <li>Cursando Análise e Desenvolvimento de Sistemas - Unopar</li>
+    </ul>
+    </section>
+    <button id="btn-topo">
+    <i class="fas fa-arrow-up"></i>
+    </button>
+    <section id="cursos" class="section">
+          <h2 class="section-title">Cursos</h2>
+    <ul>
+          <li>Java - Curso em video</li>
+          <li>JavaScript - Cuso em video</li>
+          <li>Algoritmo - curos em video</li>
+          <li>HTML5 - Curso em video</li>
+          <li>SQL - Curso em video</li>
+          <li>Lógica de programação - Curso em video</li>
+          <li>Java POO - Curso em video</li>
+    </ul>
+    </section>
+    </div>
+    <section class="section" style="background-color: #00000008;">
+    <div class="button-container" style="background-color: #fffefe00; padding: 10px 10px; display: flex; justify-content: center;">
+          <a href="#" class="button">Email</a>
+          <a href="#" class="button">Telefone</a>
+          <div id="btn-topo">&#9650;</div>
+    </selection>
+    
